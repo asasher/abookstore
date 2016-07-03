@@ -1,0 +1,158 @@
+@import 'fonts';
+
+$color_sep: #e1e1e1;
+$color_bigbadge: #FFCB00;
+
+.stylish {
+	font-family: 'mutlu_ornamental';
+}
+
+@mixin border-dashed($size) {
+	border: $size dashed $color_sep;
+}
+
+.border-dashed {
+	@include border-dashed(1px);
+}
+
+.hero-title {
+	text-align: center;
+	margin: auto;
+	
+	font-size: 4.0em;
+	padding-top: 1.0em;
+	padding-bottom: 1.0em;
+	
+	border-bottom: 2px dashed $color_sep;
+}
+
+.centered-title {
+	text-align: center;
+	margin: auto;
+	
+	padding-top: 1.0em;
+	padding-bottom: 1.0em;
+}
+
+.title {
+	padding-bottom: 0.6em;
+}
+
+.row.crop {
+	overflow: hidden !important;
+}
+
+.container-960 {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-container {
+	padding: 0.0em 1.0em;
+	.input-group {
+		padding-bottom: 1.0em;
+	}
+}
+
+.search-container {
+	padding: 0.0em;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+.search-btn {
+	.btn {
+		width: 100%;
+	}
+	padding-bottom: 1.0em;
+}
+
+.footer {
+	padding-top: 6.0em;
+	padding-bottom: 1.0em;
+}
+
+.books-container {
+	margin: auto;
+}
+
+.book-container {
+	padding-bottom: 2.0em;
+}
+.book.lg {
+	height: 430px;
+	.cover {
+		height: 400px;
+	}
+}
+.book {
+	@include border-dashed(1px);
+	padding: 1.0em;
+	.cover {
+		height: 300px;
+		overflow: hidden;
+		img {
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+}
+.book.small {
+	.cover {
+		height: 150px;
+	}
+}
+
+.badge.lg {
+	font-size: 2.0em;
+	background-color: $color_bigbadge !important;
+}
+
+.rating-btn-group {
+	.btn {
+		padding: 0.2em;
+	}
+}
+
+.order-btn-group {
+	.input-group {
+		margin: auto;
+	}
+}
+
+.btn.lg {
+	margin-top: 12.0em;
+	width: 15.0em;
+}
+
+.critiques {
+	padding-top: 2.0em;
+}
+
+.critique-form {
+	@include border-dashed(1px);
+	padding-top: 1.0em;
+	// height: 8.0em;
+
+	form {
+		height: 4.0em;
+	}
+}
+
+.user-info {
+	@include border-dashed(1px);
+	padding: 2.0em;
+	dl {
+		width: 352px;
+		margin:auto;
+	}
+}
+
+.table-container {
+	padding-top: 2.0em;
+}
+.no-item-panel {
+	padding-top: 1.4em;
+	padding-bottom: 0.8em;
+}
